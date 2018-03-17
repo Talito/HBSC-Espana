@@ -1,0 +1,251 @@
+.post-list.introduction {
+  background-image: url("/assets/images/rsz_background-intro.jpg");
+  background-size: cover;
+  background-color: #49b7ca;
+  margin-top: 5em;
+  margin-bottom: 3em; 
+}
+
+.post-list.video {
+  position: relative; 
+  width: 40%; /* for IE 6 */
+  margin: 0 auto;
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 35px; /*specific value for Youtube videos*/
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#intro-text {
+    padding: 10% 20% 6% 20%;
+    color: #fefeff;
+    display: inline-block;
+}
+
+#intro-text p {
+    font-size: 1.25em;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+#loading-message {
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.25em;
+  width: 100%;
+}
+
+#filters {
+    margin-bottom: 2em;
+}
+
+.filter {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    background-color: chocolate;
+    padding: 0.25em 0.25em;
+    border-radius: 0.25em;
+}
+
+.filter:hover {
+    background-color: #b75b19;
+    cursor: pointer;
+}
+
+#ad-join {
+    margin-top: 15em;
+    padding: 15% 20% 15% 20%;
+    font-size: 1.1em; 
+    background-color: #f2f7ff;
+    color: #000;
+    text-shadow: 0 0 2px #edecff;
+}
+
+#ad-join h3 {
+    font-style: italic;
+}
+
+#pdf-wrapper {
+    display: inline-block;
+    width: 100%;
+}
+
+#pdf-wrapper a {
+    color: #af351e;
+    text-align: center;
+    width: 33%;
+    float: left; 
+}
+
+.post-list.container {
+	position: relative; 
+	width: 80%; /* for IE 6 */
+	padding: 0;
+}
+
+.post-list.container h2 span { 
+   position: absolute; 
+   top: 750px;
+   left: 0; 
+   width: 100%; 
+   color: white; 
+   font: bold 24px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+/*   background: rgb(0, 0, 0);  fallback color 
+   background: rgba(0, 0, 0, 0.7);*/
+   padding: 10px; 
+   font-size: 3em; 
+}
+
+.posts.posts-list {
+	margin: auto 0;
+	display: inline-flex;
+}
+
+.post-card {
+    margin: 0.5em 7em 0.5em 0em;
+    width: 25%;
+    max-width: 25%;
+}
+
+.post-card img {
+	margin: auto;
+  width: 100%;
+  max-height: 150px;
+}
+
+.post-card.text {
+    color: #010438;
+    padding: 1em 1em 1em 1em;
+    cursor: pointer;
+    transition: all 0.4s ease 0s;
+    -webkit-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.75);
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+}
+
+.post-card.text:hover {
+    transform: scale(1.05) perspective(1px);
+}
+
+.post-card.text h3 {
+  font-weight: bold;
+}
+
+.post-list.logos {
+    background-color: black;
+    margin: 0 auto;
+    padding: 7%;
+    text-align: center;
+}
+
+.post-list.logos .img-responsive {
+  display: inline-block;
+}
+
+.promo-logo {
+  margin: 1.5em;
+  max-width: 100%;
+}
+
+.promo-logo:hover {
+  transform: scale(1.05) perspective(1px);
+}
+
+.container-twitter {
+  float: left;
+  margin-top: 1em;
+  max-width: 30%;
+}
+
+.container-social-feed {
+  display: inline;
+}
+
+.container-events {
+  float: right;
+  margin-top: 1em;
+}
+
+@media screen and (max-width: 740px) {
+
+  .container-twitter {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .post-list.video {
+    width: 100%; /* for IE 6 */
+  }
+
+  #intro-text {
+    font-size: 1em; 
+    padding: 4% 5% 3% 5%;
+  }
+  .post-card {
+    margin: 0.5em 0.5em 0.5em 0em;
+    width: 100%;
+    max-width: 100%;
+  }
+
+	.post-list.introduction {
+		margin-top: 2em;
+    margin-bottom: 1em; 
+	}
+
+	.container h2 {
+		text-align: center;
+	}
+	.posts.posts-list {
+		display: inline-block;
+	}
+	#intro-text {
+		display: block;
+		width: 100%;
+	}
+  #pdf-wrapper a {
+    padding: 1em;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  #ad-join {
+    padding: 1% 5% 5% 5%;
+    font-size: 1em;
+    margin-top: 1em;
+  }
+  .post-list.logos {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .post-list.logos img {
+    display: inline-block;
+  }
+
+  .promo-logo {
+    margin: 0 auto;
+  }
+}

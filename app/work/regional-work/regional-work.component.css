@@ -1,0 +1,34 @@
+.regional.content {
+	margin-top: 7em;
+	padding: 0 5%;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+	-webkit-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.75);
+}
+
+h1:hover {
+	cursor: pointer;
+}
+
+#references-note {
+	margin-top: 2em;
+	font-size: 1.85em;
+	text-align: center;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.map-element:hover {
+	fill: #8490c8;
+	cursor: pointer;
+}
+
+@media screen and (min-width: 740px) {
+	.regional.content {
+		padding: 0 25%;
+	}
+}

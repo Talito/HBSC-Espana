@@ -1,0 +1,26 @@
+body {
+	font-family: 'Fedra Sans Condensed Book';
+	margin: auto 0;
+	text-align: justify;
+    font-stretch: normal;
+    font-size: 1.8em;
+}
+
+p {
+	line-height: 150%;
+}
+
+h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  text-align: center;
+}
+
+@font-face {
+	font-family: "Fedra Sans Condensed Book";
+/*	src: url("assets/fonts/Harabara.eot");*/
+	src: 
+/*	url("assets/fonts/Harabara.woff") format("woff"),*/
+	url("assets/fonts/FeSaCdPro-Book.otf") format("opentype");/*,
+	url("assets/fonts/Harabara.svg#filename") format("svg");*/
+}

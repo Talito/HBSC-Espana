@@ -1,0 +1,42 @@
+.team.container {
+	padding: 0 10%;
+	margin-top: 5em;
+}
+
+.team.member-picture-row {
+    display: inline-block;
+	height: 100%;
+}
+
+.team .member-card {
+	width: 31%;
+    margin: 1%;
+    word-break: break-word;
+    float: left;
+    text-align: left;
+}
+
+.team .member-card .email {
+	word-break: break-all;
+}
+
+.team.member-picture.img-responsive {
+	-webkit-box-shadow: 0px 0px 3px 1px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 3px 1px rgba(0,0,0,1);
+    box-shadow: 0px 0px 3px 1px rgba(2, 57, 74, 0);
+    display: block;
+    max-width: 250px;
+    max-height: 180px;
+    height: auto;
+}
+
+.member-description { 
+    font-size: 0.85em;
+}
+
+@media screen and (max-width: 740px) {
+	.team .member-card {
+		width: 100%;
+		margin: 3%;
+	}
+}

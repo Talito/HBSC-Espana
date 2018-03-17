@@ -1,0 +1,11 @@
+.contact.content {
+	margin-top: 7em;
+	padding: 0 10%;
+	height: 100%;
+}
+
+@media screen and (min-width: 740px) {
+	.contact.content {
+		padding: 0 25%;
+	}
+}

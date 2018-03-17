@@ -1,0 +1,74 @@
+.post-list.container {
+  margin-top: 5em;
+  margin-bottom: 3em; 
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+}
+
+#loading-message {
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.25em;
+  width: 100%;
+}
+
+.post-list.container h2 span { 
+   position: absolute; 
+   top: 750px;
+   left: 0; 
+   width: 100%; 
+   color: white; 
+   font: bold 24px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+/*   background: rgb(0, 0, 0);  fallback color 
+   background: rgba(0, 0, 0, 0.7);*/
+   padding: 10px; 
+   font-size: 3em; 
+}
+
+.posts.posts-list {
+	margin: auto 0;
+	display: inline-flex;
+}
+
+.post-card {
+    margin: 0.5em 7em 0.5em 0em;
+}
+
+.post-card.text {
+    color: #010438;
+    padding: 1em 1em 1em 1em;
+    cursor: pointer;
+    transition: all 0.4s ease 0s;
+    -webkit-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.75);
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+}
+
+.post-card.text h3 {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 740px) {
+
+  .post-card {
+    margin: 0.5em 0.5em 0.5em 0em;
+    width: 100%;
+    max-width: 100%;
+  }
+
+	.container h2 {
+		text-align: center;
+	}
+
+	.posts.posts-list {
+		display: inline-block;
+	}
+}

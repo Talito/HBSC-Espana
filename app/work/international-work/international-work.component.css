@@ -1,0 +1,16 @@
+.international.content {
+	margin-top: 6em;
+	padding: 0 5%;
+}
+
+.international.content img {
+    max-height: 50%;
+    max-width: 50%;
+    float: left;
+}
+
+@media screen and (min-width: 740px) {
+	.international.content {
+		padding: 0 25%;
+	}
+}

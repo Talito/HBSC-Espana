@@ -1,0 +1,54 @@
+<div class="post-list introduction">
+	<div id="intro-text">
+		<h2>¿Qué es HBSC España?</h2>
+		<p>El <a href="http://www.hbsc.org/" target="_blank">Health Behaviour in School-aged Children (HBSC)</a> o Estudio sobre las conductas saludables de los jóvenes escolarizados es un proyecto auspiciado por la <a href="http://www.who.int/es/" target="_blank">Organización Mundial de la Salud (OMS)</a> en el que participan más de 40 países occidentales.</p>
+
+		<p>En el marco de este proyecto, cada cuatro años se realiza una recogida de datos con el objetivo principal de obtener una visión global de los estilos de vida de los adolescentes y disponer así de herramientas útiles para el debate sobre la promoción de la salud en esta población. En este estudio, siguiendo las directrices de la OMS, se entiende por salud el estado completo de bienestar físico, mental y social, y no sólo la ausencia de enfermedad. Por este motivo el cuestionario recoge datos relativos a diferentes ámbitos: relaciones familiares, relaciones con los iguales, contexto escolar, ajuste psicológico, alimentación y dieta, consumo de sustancias y actividades sedentarias.</p>
+	</div>
+</div>
+
+<div class="post-list container">
+	<h1>Últimas publicaciones</h1>
+	<div id="filters">
+			<span (click)="switchFilter('notas')" class="filter">Notas de prensa</span> 
+			| <span (click)="switchFilter('factsheet')" class="filter">Factsheet</span>
+		</div>
+	<div class="posts posts-list">
+		<div *ngFor="let post of posts | categoryPipe: this.activeFilter" (click)="selectPost(post.slug)" class="post-card">
+			<div class="post-card text">
+				<img class="img-responsive" [src]="post.featuredImageLink" onError="this.src='wp-content/themes/hbscng2/dist/assets/images/error-image.png';">
+				<h3>{{ post.title }}</h3>
+				<p [innerHTML]="post.excerpt"><p>
+			</div>
+		</div>
+		<div *ngIf="!posts?.length" id="loading-message">
+			<p>Cargando últimas publicaciones...</p>
+		</div>
+	</div>
+	<div class="container-social-feed">
+		<div class="container-twitter">
+			<a class="twitter-timeline" href="https://twitter.com/HBSCSpain" data-lang="es" data-tweet-limit="2" data-chrome="nofooter" data-width="450" data-height="450">
+				Tuits de @HBSCSpain
+			</a>
+		</div>
+		<div class="container-events">
+			<h1>Agenda</h1>
+			<p>Muy pronto podrás estar al día de las próximas actividades en las que el HBSC estará presente...</p>
+		</div>
+	</div>
+</div>
+
+<div class="post-list video">
+	<h1>Nuestro vídeo de presentación</h1>
+	<div class="video-container">
+		<iframe  src="https://www.youtube.com/embed/aYntSQDSUJ8"></iframe>
+	</div>
+</div>
+
+<div class="post-list logos">
+	<h1>Agradecimientos</h1>
+	<a href="http://www.hbsc.org/" target="_blank"><img class="img-responsive" class="promo-logo" src="wp-content/themes/hbscng2/dist/assets/images/hbscorg_footer.png" /></a>
+	<a href="https://www.msssi.gob.es/" target="_blank"><img class="img-responsive" class="promo-logo" src="wp-content/themes/hbscng2/dist/assets/images/logo_mscenl.png" /></a>
+	<a href="http://www.juntadeandalucia.es/index.html" target="_blank"><img class="img-responsive" class="promo-logo" src="wp-content/themes/hbscng2/dist/assets/images/logo_junta.png" /></a>
+	<a href="https://psicologia.us.es/" target="_blank"><img class="img-responsive" class="promo-logo" src="wp-content/themes/hbscng2/dist/assets/images/us-logo.png" /></a>
+</div>

@@ -1,0 +1,16 @@
+.events.content {
+	margin-top: 7em;
+	padding: 0 10%;
+}
+
+.urgency-message {
+	font-size: 1.25em;
+	color: red;
+	text-align: center;
+}
+
+@media screen and (min-width: 740px) {
+	.events.content {
+		padding: 0 25%;
+	}
+}

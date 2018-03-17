@@ -1,0 +1,52 @@
+.publications.content {
+	margin-top: 7em;
+	padding: 0 10%;
+}
+
+.publication-selector:hover {
+	cursor: pointer;
+	transform: scale(1.05) perspective(1px);
+}
+
+.publication-group-selectors {
+	text-align: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	border-radius: 0.5em;
+/*  	background-image: url("/assets/images/libros-publicaciones.jpg");*/
+}
+
+#references {
+	text-align: center;
+	font-weight: bold;
+}
+
+#references-note {
+	margin-top: 2em;
+	font-size: 1.85em;
+	text-align: center;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.publication-selector {
+	display: inline-block;
+	padding: 0.1em;
+    display: inline-block;
+    max-width: 50px;
+}
+
+.shinning-text {
+	color: #0099CC;
+}
+
+@media screen and (min-width: 740px) {
+	.publications.content {
+		padding: 0 20%;
+	}
+
+	.publication-selector {
+		max-width: 150px;
+	}
+
+}

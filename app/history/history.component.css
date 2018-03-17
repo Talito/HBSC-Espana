@@ -1,0 +1,33 @@
+.history.content {
+	margin-top: 7em;
+	padding: 0 10%;
+}
+
+.history.content img {
+  	margin: 0 auto;
+    -webkit-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.75);
+    border: 0.05em solid #00000057;
+    border-radius: 0.20em; 
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.shinning-text {
+  color: #0099CC;
+}
+
+.center {
+  text-align: center;
+}
+
+.shinning-line-left {
+  border-left: 5px solid #0099CC;
+}
+
+@media screen and (min-width: 740px) {
+	.history.content {
+		padding: 0 25%;
+	}
+}

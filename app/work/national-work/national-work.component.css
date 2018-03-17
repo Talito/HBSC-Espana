@@ -1,0 +1,31 @@
+.national.content {
+	margin-top: 7em;
+	padding: 0 5%;
+}
+
+.map-element:hover {
+	fill: red;
+	cursor: pointer;
+}
+
+.date-element:hover {
+	cursor: pointer;
+}
+
+#references-note {
+	margin-top: 2em;
+	font-size: 1.85em;
+	text-align: center;
+	font-weight: bold;
+	font-style: italic;
+}
+
+h1:hover {
+	cursor: pointer;
+}
+
+@media screen and (min-width: 740px) {
+	.national.content {
+		padding: 0 25%;
+	}
+}

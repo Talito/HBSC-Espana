@@ -1,0 +1,32 @@
+<div class="post container">
+
+	<!-- Button and modal format on smaller screens for left side image -->
+	<button id="button-modal" type="button" (click)="modal.show()">Factsheet</button>
+	<app-modal #modal>
+		<div class="app-modal-header">
+		  <button type="button" class="btn btn-default close-btn" (click)="modal.hide()">Cerrar
+		  </button>
+		</div>
+		<div class="app-modal-body">
+		  <img class="featured-image" [src]="post.featuredImageLink"/>
+		  <div id="loading-message" *ngIf="post.featuredImageLink === undefined">
+		  	<p>Cargando imagen...</p>
+		  </div>
+		</div>
+	</app-modal>
+
+	<!-- Larger screens left side image -->
+	<div class="post container left">
+		<img class="featured-image" [src]="post.featuredImageLink"/>
+	</div>
+
+	<!-- Common right side factshets text -->
+	<div class="post container right">
+		<div *ngIf="post">
+			<h1>{{ post.title }}</h1>
+			<div [innerHTML]="post.content">
+				<!-- Dynamically loaded content from API -->
+			</div>
+		</div>
+	</div>
+</div>

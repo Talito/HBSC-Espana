@@ -1,0 +1,44 @@
+ <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a id="logo" class="navbar-brand" routerLink="">HBSC España</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<ul class="nav navbar-nav" routerLinkActive="active">
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sobre nosotros <span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a class="nav-link" routerLink="equipo">Quiénes somos</a></li>
+					<li><a class="nav-link" routerLink="historia">Nuestra historia</a></li>
+					<li><a class="nav-link" routerLink="noticias">Noticias</a></li>
+				</ul>
+			</li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Informes <span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a routerLink="trabajo/internacional">Internacional</a></li>
+					<li><a routerLink="trabajo/nacional">Nacional</a></li>
+					<li><a routerLink="trabajo/autonomico">Autonómico</a></li>
+				</ul>
+			</li>
+			<li class="nav-item"><a class="nav-link" routerLink="temas">Temas</a></li>
+			<li class="nav-item"><a class="nav-link" routerLink="publicaciones">Publicaciones</a></li>
+
+			<!-- TODO: consider what to do with the information here -->
+			<!-- <li class="nav-item"><a class="nav-link" routerLink="eventos"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i>&nbsp; Eventos</a></li> -->
+		</ul>
+      <!-- To be reused for the image -->
+<!--       <ul class="nav navbar-nav navbar-right">
+      </ul> -->
+    </div>
+  </div>
+</nav>

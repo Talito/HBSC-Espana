@@ -1,0 +1,9 @@
+.modal {
+  background: rgba(0,0,0,0.6);
+  max-height: calc(100vh);
+  overflow-y: auto;
+}
+
+.modal-body {
+    background-color: lightsalmon;
+}

@@ -1,0 +1,17 @@
+.error.container {
+	padding: 0 10%;
+	margin-top: 7em;
+	height: 100%;
+}
+
+#error-message {
+	text-align: center;
+	padding: 5%;
+}
+
+#error-message .img-responsive {
+    display: inline;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}

@@ -1,0 +1,273 @@
+<div class="publications content">
+	<h2>Nuestras publicaciones</h2>
+	<div class="publication-group-selectors">
+		<img class="publication-selector" (click)="ShowTextFragment('national')" src="wp-content/themes/hbscng2/dist/assets/images/publications-national.png"/>
+		<img class="publication-selector" (click)="ShowTextFragment('international')" src="wp-content/themes/hbscng2/dist/assets/images/publications-international.png"/>
+		<img class="publication-selector" (click)="ShowTextFragment('papers')" src="wp-content/themes/hbscng2/dist/assets/images/publications-papers.png"/>
+		<img class="publication-selector" (click)="ShowTextFragment('bookchapters')" src="wp-content/themes/hbscng2/dist/assets/images/publications-books.png"/>
+		<img class="publication-selector" (click)="ShowTextFragment('others')" src="wp-content/themes/hbscng2/dist/assets/images/publications-others.png"/>
+		<!-- <h3 class="publication-selector" (click)="ShowTextFragment('national')">Nacionales <i class="fa fa-book" aria-hidden="true"></i></h3>
+		<h3 class="publication-selector" (click)="ShowTextFragment('international')">Internacionales <i class="fa fa-book" aria-hidden="true"></i></h3>
+		<h3 class="publication-selector" (click)="ShowTextFragment('papers')">Artículos <i class="fa fa-file" aria-hidden="true"></i>
+		</h3>
+		<h3 class="publication-selector" (click)="ShowTextFragment('bookchapters')">Capítulos <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+		</h3>
+		<h3 class="publication-selector" (click)="ShowTextFragment('others')">Otros <i class="fa fa-info-circle" aria-hidden="true"></i>
+		</h3> -->
+	</div>
+
+	<h3 id="references">Referencias</h3>
+	<div id="references-note" *ngIf="!showNationalBooks && !showInternationalBooks && !showPapers && !showBookChapters && !showOthers">
+		<p>Pulsa en la sección de interés para encontrar las referencias bibliográficas.</p>
+	</div>
+	<div *ngIf="showNationalBooks">
+				<h2>Libros nacionales</h2>
+				<h3>Edición de 2014</h3>
+				<h4 class="shinning-text">– Informe de resultados.</h4>
+				<p>MORENO, C., RAMOS, P., RIVERA, F., et al. (2016). Los adolescentes españoles: estilos de vida, salud, ajuste psicológico y relaciones en sus contextos de desarrollo. Resultados del estudio HBSC-2014 en España. Madrid: Ministerio de Sanidad, Servicios Sociales e Igualdad. NIPO: 680-16-090-4.</p>
+
+				<h4 class="shinning-text">– Informe técnico con los resultados nacionales.</h4>
+				<p>MORENO, C., RAMOS, P., RIVERA, F., ET AL (2016). Informe técnico de los resultados obtenidos por el estudio Health Behaviour in School-aged Children (HBSC) 2014 en España. Madrid: Ministerio de Sanidad, Servicios Sociales e Igualdad. NIPO: 680-16-091-X.</p>
+
+				<h4 class="shinning-text">– Informe técnico con la metodología del estudio.</h4>
+				<p>MORENO, C., RIVERA, F., RAMOS, P. et al. (2016). Metodología empleada en el Estudio HBSC-2014 en España. Madrid: Ministerio de Sanidad, Servicios Sociales e Igualdad.</p>
+
+				<h4 class="shinning-text">- Informe sobre las características de los centros educativos participantes.</h4>
+				<p>MORENO, C., RAMOS, P., RIVERA, F., ET AL (2016). Estudio Health Behaviour in School‐aged Children (HBSC‐2014): Actividades de promoción y educación para la salud en los centros educativos españoles. Análisis de los aspectos estructurales y de recursos que las condicionan. Madrid: Ministerio de Sanidad, Servicios Sociales e Igualdad.</p>
+
+				<h4>– Informe de resultados sobre adolescentes adoptados.</h4>
+				<p>MORENO, C., PANIAGUA, C., RIVERA, F., et al. (2016). Adolescentes adoptados: análisis de sus estilos de vida, salud, ajuste psicológico y relaciones en sus contextos de desarrollo. Resultados del Estudio HBSC-2014 en España. Madrid: Ministerio de Sanidad, Servicios Sociales e Igualdad.</p>
+
+				<h4 class="shinning-text">– Informe de resultados sobre adolescentes inmigrantes.</h4>
+				<p>MORENO, C., JIMENEZ-IGLESIAS, A., SÁNCHEZ-QUEIJA, I.,et al. (2016). Adolescentes inmigrantes en España: análisis de sus estilos de vida, salud, ajuste psicológico y relaciones en sus contextos de desarrollo. Resultados del Estudio HBSC-2014 en España. Madrid: Ministerio de Sanidad, Servicios Sociales e Igualdad.</p>
+
+				<h3>Edición de 2010</h3>
+				<h4 class="shinning-text">– Resumen de resultados.</h4> 
+				<p>MORENO, C., RAMOS, P., RIVERA, F., JIMÉNEZ-IGLESIAS, A. y GARCÍA-MOYA, I. (2012). Las conductas relacionadas con la salud y el desarrollo de los adolescentes españoles. Resumen del estudio Health Behaviour in School-aged Children (HBSC-2010). Madrid: Ministerio de Sanidad, Servicios Sociales e Igualdad. NIPO: 680-12-015-9.</p>
+
+				<h4 class="shinning-text">– Informe de resultados.</h4>
+				<p>MORENO, C., RAMOS, P., RIVERA, F., JIMÉNEZ-IGLESIAS, A., GARCÍA-MOYA, I., SÁNCHEZ-QUEIJA, I., LÓPEZ, A. y GRANADO, M.C. (2012). Las conductas relacionadas con la salud y el desarrollo de los adolescentes españoles. Resultados del Estudio HBSC-2010 con chicos y chicas españoles de 11 a 18 años. Madrid: Ministerio de Sanidad, Servicios Sociales e Igualdad. NIPO: 680-12-014-3.</p>
+
+				<h3>Edición de 2006</h3>
+				<h4 class="shinning-text">– Resumen de resultados.</h4>
+				<p>MORENO, C., RAMOS, P., RIVERA, F., MUÑOZ-TINOCO, V., SÁNCHEZ-QUEIJA, I., GRANADO, M.C. &amp; JIMÉNEZ-IGLESIAS, A. (2011). Desarrollo adolescente y salud en España. Resumen del estudio Health Behaviour in School-aged Children (HBSC – 2006). Madrid, España: Ministerio de Sanidad, Política Social e Igualdad. NIPO: 860110366.</p>
+
+				<h4 class="shinning-text">– Informe técnico con los resultados nacionales.</h4>
+				<p>MORENO, C.; MUÑOZ-TINOCO, V.; PÉREZ, P.; SÁNCHEZ-QUEIJA, I.; GRANADO M.C.; RAMOS, P. y RIVERA, F. (2008). Desarrollo adolescente y salud. Resultados del Estudio HBSC-2006 con chicos y chicas españoles de 11 a 17 años. Madrid: Ministerio de Sanidad, Política Social e Igualdad. NIPO: 351-08-036-0.</p>
+
+				<h4 class="shinning-text">– Informe de resultados de adolescentes inmigrantes.</h4>
+				<p>MORENO, C., RAMOS, P., RIVERA, F. &amp; JIMÉNEZ-IGLESIAS, A. (2011). Estilos de vida y salud en adolescentes inmigrantes en España. Resultados del estudio Health Behaviour in School-aged Children (HBSC – 2006). Madrid: Ministerio de Sanidad, Política Social e Igualdad. NIPO: 860110350.</p>
+
+				<h4 class="shinning-text">– Informe técnico con los resultados por comunidades autónomas.</h4>
+				<p>Andalucía: MORENO, C.; MUÑOZ-TINOCO, V.; PÉREZ, P.; SÁNCHEZ-QUEIJA, I.; GRANADO M.C.; RAMOS, P. y RIVERA, F. (2008). Desarrollo adolescente y salud. Resultados del Estudio HBSC-2006 con chicos y chicas andaluces de 11 a 17 años. Madrid: Ministerio de Sanidad, Política Social e Igualdad. NIPO: 351-08-017-2.</p>
+
+				<p>Aragón: MORENO, C.; GRANADO, M.C.; RAMOS, P.; RIVERA, F.; MUÑOZ-TINOCO, V.; SÁNCHEZ-QUEIJA, I. y PÉREZ, P. (2008). Desarrollo adolescente y salud. Resultados del Estudio HBSC-2006 con chicos y chicas aragoneses de 11 a 17 años. Madrid: Ministerio de Sanidad, Política Social e Igualdad. NIPO: 351-08-018-8.</p>
+
+				<p>Asturias: MORENO, C.; MUÑOZ-TINOCO, V.; PÉREZ, P.; SÁNCHEZ-QUEIJA, I.; GRANADO, M.C.; RAMOS, P. y RIVERA, F.; (2008). Desarrollo adolescente y salud. Resultados del Estudio HBSC-2006 con chicos y chicas asturianos de 11 a 17 años. Madrid: Ministerio de Sanidad, Política Social e Igualdad. NIPO: 351-08-019-3.</p>
+
+				<p>Baleares: MORENO, C.; MUÑOZ-TINOCO, V.; PÉREZ, P.; SÁNCHEZ-QUEIJA, I.; GRANADO, M.C.; RAMOS, P. y RIVERA, F. (2008). Desarrollo adolescente y salud. Resultados del Estudio HBSC-2006 con chicos y chicas baleares de 11 a 17 años. Madrid: Ministerio de Sanidad, Política Social e Igualdad. NIPO: 351-08-020-6.</p>
+
+				<p>Canarias: MORENO, C.; RIVERA, F.; MUÑOZ-TINOCO, V.; PÉREZ, P.; SÁNCHEZ-QUEIJA, I.; GRANADO, M.C. y RAMOS, P. (2008). Desarrollo adolescente y salud. Resultados del Estudio HBSC-2006 con chicos y chicas canarios de 11 a 17 años. Madrid: Ministerio de Sanidad, Política Social e Igualdad. NIPO: 351-08-021-1.</p>
+
+				<p>Cantabria: MORENO, C.; PÉREZ, P.; SÁNCHEZ-QUEIJA, I.; GRANADO, M.C.; RAMOS, P.; RIVERA, F. y MUÑOZ-TINOCO, V. (2008). Desarrollo adolescente y salud. Resultados del Estudio HBSC-2006 con chicos y chicas cántabros de 11 a 17 años. Madrid: Ministerio de Sanidad, Política Social e Igualdad. NIPO: 351-08-022-7.</p>
+
+				<p>Castilla y León: MORENO, C.; GRANADO, M.C.; RAMOS, P.; SÁNCHEZ-QUEIJA, I.; MUÑOZ-TINOCO, V.; PÉREZ, P. y RIVERA, F. (2008). Desarrollo adolescente y salud. Resultados del Estudio HBSC-2006 con chicos y chicas castellano-leoneses de 11 a 17 años. Madrid: Ministerio de Sanidad, Política Social e Igualdad. NIPO: 351-08-023-2.</p>
+
+				<p>Castilla La Mancha: MORENO, C.; SÁNCHEZ-QUEIJA, I; GRANADO, M.C.; RAMOS, P.; RIVERA, F.; MUÑOZ-TINOCO, V. y PÉREZ, P. (2008). Desarrollo adolescente y salud. Resultados del Estudio HBSC-2006 con chicos y chicas castellano-manchegos de 11 a 17 años. Madrid: Ministerio de Sanidad, Política Social e Igualdad. NIPO: 351-08-024-8.</p>
+
+				<p>Cataluña: MORENO, C.; RIVERA, F.; MUÑOZ-TINOCO, V.; PÉREZ, P.; SÁNCHEZ-QUEIJA, I.; GRANADO, M.C. y RAMOS, P. (2008). Desarrollo adolescente y salud. Resultados del Estudio HBSC-2006 con chicos y chicas catalanes de 11 a 17 años. Madrid: Ministerio de Sanidad, Política Social e Igualdad. NIPO: 351-08-025-3.</p>
+
+				<p>Ceuta y Melilla: MORENO, C.; GRANADO, M.C.; RAMOS, P.; SÁNCHEZ-QUEIJA, I.; MUÑOZ-TINOCO, V.; PÉREZ, P. y RIVERA, F. (2008). Desarrollo adolescente y salud. Resultados del Estudio HBSC-2006 con chicos y chicas ceutíes y melillenses de 11 a 17 años. Madrid: Ministerio de Sanidad, Política Social e Igualdad. NIPO: 351-08-027-4.</p>
+
+				<p>Comunidad Valenciana: MORENO, C.; SÁNCHEZ-QUEIJA, I.; GRANADO, M.C.; RAMOS, P.; RIVERA, F.; MUÑOZ-TINOCO, V. y PÉREZ, P. (2008). Desarrollo adolescente y salud. Resultados del Estudio HBSC-2006 con chicos y chicas valencianos de 11 a 17 años. Madrid: Ministerio de Sanidad, Política Social e Igualdad. NIPO: 351-08-034-X.</p>
+
+				<p>Extremadura: MORENO, C.; MUÑOZ-TINOCO, V.; PÉREZ, P.; SÁNCHEZ-QUEIJA, I; GRANADO, M.C.; RAMOS, P. y RIVERA, F. (2008). Desarrollo adolescente y salud. Resultados del Estudio HBSC-2006 con chicos y chicas extremeños de 11 a 17 años. Madrid: Ministerio de Sanidad, Política Social e Igualdad. NIPO: 351-08-028-X.</p>
+
+				<p>Galicia: MORENO, C.; PÉREZ, P.; SÁNCHEZ-QUEIJA, I; GRANADO, M.C.; RAMOS, P.; RIVERA, F. y MUÑOZ-TINOCO, V. (2008). Desarrollo adolescente y salud. Resultados del Estudio HBSC-2006 con chicos y chicas gallegos de 11 a 17 años. Madrid: Ministerio de Sanidad, Política Social e Igualdad. NIPO: 351-08-029-5.</p>
+
+				<p>Madrid: MORENO, C.; SÁNCHEZ-QUEIJA, I; GRANADO, M.C.; RAMOS, P.; RIVERA, F.; MUÑOZ-TINOCO, V. y PÉREZ, P. (2008). Desarrollo adolescente y salud. Resultados del Estudio HBSC-2006 con chicos y chicas madrileños de 11 a 17 años. Madrid: Ministerio de Sanidad, Política Social e Igualdad. NIPO: 351-08-030-8.</p>
+
+				<p>Murcia: MORENO, C.; PÉREZ, P.; SÁNCHEZ-QUEIJA, I; GRANADO, M.C.; RAMOS, P.; RIVERA, F. y MUÑOZ-TINOCO, V. (2008). Desarrollo adolescente y salud. Resultados del Estudio HBSC-2006 con chicos y chicas murcianos de 11 a 17 años. Madrid: Ministerio de Sanidad, Política Social e Igualdad. NIPO: 351-08-031-3.</p>
+
+				<p>Navarra: MORENO, C.; RAMOS, P.; RIVERA, F.; SÁNCHEZ-QUEIJA, I.; PÉREZ, P.; MUÑOZ-TINOCO, V. y GRANADO, M.C. (2008). Desarrollo adolescente y salud. Resultados del Estudio HBSC-2006 con chicos y chicas navarros de 11 a 17 años. Madrid: Ministerio de Sanidad, Política Social e Igualdad. NIPO: 351-08-032-9.</p>
+
+				<p>País Vasco: MORENO, C.; RAMOS, P.; RIVERA, F.; MUÑOZ-TINOCO, V.; PÉREZ, P.; SÁNCHEZ-QUEIJA, I. y GRANADO, M.C. (2008). Desarrollo adolescente y salud. Resultados del Estudio HBSC-2006 con chicos y chicas vascos de 11 a 17 años. Madrid: Ministerio de Sanidad, Política Social e Igualdad. NIPO: 351-08-035-5.</p>
+
+				<p>La Rioja: MORENO, C.; RIVERA, F.; MUÑOZ-TINOCO, V.; PÉREZ, P.; SÁNCHEZ-QUEIJA, I.; GRANADO, M.C. y RAMOS, P. (2008). Desarrollo adolescente y salud. Resultados del Estudio HBSC-2006 con chicos y chicas riojanos de 11 a 17 años. Madrid: Ministerio de Sanidad, Política Social e Igualdad. NIPO: 351-08-033-4.</p>
+
+				<h4>– Informe sobre actividades de promoción y educación para la salud en los centros educativos españoles.</h4>
+				<p>MORENO, C.; SÁNCHEZ-QUEIJA, I.; RIVERA, F.; RAMOS, P.; GRANADO, M.C.; MUÑOZ-TINOCO, V. y JIMÉNEZ-IGLESIAS, A. (2008). Estudio Health Behaviour in School-aged Children (HBSC): Resultados de la encuesta a los centros educativos (actividades de promoción y educación para la salud y aspectos estructurales y de recursos que las condicionan). Madrid: Ministerio de Sanidad, Política Social e Igualdad. NIPO: 351-08-100-0.</p>
+
+				<h3>Edición de 2002</h3>
+				<h4 class="shinning-text">– Resumen de resultados.</h4>
+				<p>MORENO, M.C., MUÑOZ, M.V., PÉREZ, P. y SÁNCHEZ-QUEIJA, I (2005a), Los adolescentes españoles y su salud. Resumen del estudio "Health Behaviour in School Aged Children" (HBSC-2002). Madrid: Ministerio de Sanidad, Política Social e Igualdad. ISBN: 84-0000-000-0.</p>
+
+				<h4 class="shinning-text">– Informe técnico con los resultados nacionales.</h4>
+				<p>MORENO, M.C., MUÑOZ, M.V., PÉREZ, P. y SÁNCHEZ-QUEIJA, I (2005b). Los adolescentes españoles y su salud. Un análisis en chicos y chicas de 11 a 17 años. Madrid: Ministerio de Sanidad, Política Social e Igualdad.</p>
+
+				<h3>Comparación entre ediciones</h3>
+				<h4 class="shinning-text">- Informe técnico comparativo del estudio HBSC en España 2002-2006.</h4>
+				<p>MORENO, C.; RIVERA, F.; RAMOS, P.; et al. (2008). Estudio sobre Conductas de los Escolares Relacionadas con la Salud (Health Behaviour in School-aged Children, HBSC). Análisis comparativo de los resultados obtenidos en 2002 y 2006 en España. Madrid: Ministerio de Sanidad, Política Social e Igualdad. NIPO: 351-08-026-9.</p>
+
+				<h4 class="shinning-text">- Informe técnico comparativo del estudio HBSC en España 2002-2006-2010.</h4>
+				<p>MORENO, C., RIVERA, F., SÁNCHEZ-QUEIJA, I., JIMÉNEZ-IGLESIAS, A., GARCÍA-MOYA, I. Y FUCHS, N. (2013). Los estilos de vida y la salud de los adolescentes españoles a lo largo de la primera década del milenio. El estudio Health Behaviour in School-aged Children (HBSC) 2002-2006-2010. Madrid, España: Ministerio De Sanidad, Servicios Sociales e Igualdad. NIPO: 680-13-047-X.</p>
+
+				<h4 class="shinning-text">- Informe técnico comparativo del estudio HBSC en España 2002-2006-2010-2014.</h4>
+				<p>MORENO, C., RAMOS, P., GARCIA-MOYA, I., et al. (2016). Informe comparativo de las ediciones 2002-2006-2010-2014 del Estudio HBSC en España. Ministerio de Sanidad, Servicios Sociales e Igualdad.</p>
+
+				<h3>Ediciones desde 1986 hasta 2000</h3>
+				<p>MENDOZA, R., SAGRERA, R. y BATISTA, J.M. (1990), Conductas de los escolares españoles relacionadas con la salud (1986-1990). Madrid: Consejo Superior de Investigaciones Científicas.
+				</p></div>
+	<div *ngIf="showInternationalBooks">
+				<h2>Libros internacionales</h2>
+				<h3>Edición de 2014</h3>
+				<h4 class="shinning-text">– Informe internacional HBSC-2014.</h4>
+				<p>Imagen informe internacional 2014
+				INCHLEY, J., CURRY, D., YOUNG, T., SAMDAL, O., TORSHEIM, T., AUGUSTON, L., MATHISON, F., ALEMAN-DIAZ, A., MOLCHO, M., WEBER, M., BARNEKOW, V. (2016). Growing up unequal: gender and socioeconomic differences in young people’s health and well-being: Health Behaviour in School-aged Children (HBSC) study: International report from the 2013/2014 survey. Copenhagen, Denmark: Health policy for children and adolescents (Report No. 7). WHO Regional Office for Europe.</p>
+
+				<h3>Edición de 2010</h3>
+				<h4 class="shinning-text">– Informe internacional HBSC-2010.</h4>
+				<p>Social determinants of health and well-being among young people 2010
+				CURRIE, C., ZANOTTI, C., MORGAN, A., CURRIE, D., DE LOOZE, M., ROBERTS, C.,… BARKENOW, V. (2012). Social determinants of health and well-being among young people: Health Behaviour in School-aged Children (HBSC) study: International report from the 2009/2010 survey. Copenhagen, Denmark: Health policy for children and adolescents (Report No. 6). WHO Regional Office for Europe.</p>
+
+				<h3>Edición 2006</h3>
+				<h4 class="shinning-text">– Informe internacional HBSC-2006.</h4>
+				<p>Imagen informe internacional 2006
+				CURRIE C. ET AL (EDS) (2008). Inequalities in young people's health: international report from the HBSC 2006/06 survey. WHO Policy Series: Health policy for children and adolescents Issue 5, WHO Regional Office for Europe, Copenhagen. WHO Regional Office for Europe.</p>
+	 
+				<h3>Edición 2002</h3>
+				<h4 class="shinning-text">– Informe internacional HBSC-2002.</h4>
+				<p>
+				Imagen informe internacional 2002
+				CURRIE C. ET AL (EDS.) 2004. Young People's Health in Context: international report from the HBSC 2001/02 survey. WHO Policy Series: Health policy for children and adolescents Issue 4, WHO Regional Office for Europe, Copenhagen. WHO Regional Office for Europe.
+				</p>
+	</div>
+	<div *ngIf="showPapers">
+		<h2>Artículos científicos</h2>
+		<p>– RAMOS, P., RIVERA, F., PÉREZ, R.S., LAURA, L. Y MORENO, C. (en prensa). Diferencias de género en la imagen corporal y su importancia en el control de peso. Escritos de Psicología.</p>
+
+		<p>– RAMOS, P., JIMÉNEZ-IGLESIAS, A., RIVERA, F. Y MORENO, C. (en prensa). Evolución de la práctica de la actividad física en los adolescentes españoles / Physical activity trends in Spanish adolescents. Revista Internacional de Medicina y Ciencias de la Actividad Física y del Deporte, vol(x), pp-pp. http://cdeporte.rediris.es/revista/inpress/artevolucion692.pdf. Pendiente de publicación / In press.</p>
+
+		<p>– SÁNCHEZ-QUEIJA, I., MORENO, C., RIVERA, F. &amp; RAMOS, P. (2015). Tendencias en el consumo de alcohol en los adolescentes escolarizados españoles a lo largo de la primera década del siglo XXI. Gaceta Sanitaria.</p>
+
+		<p>– JIMÉNEZ-IGLESIAS, A., MORENO, C., RAMOS, P. &amp; RIVERA, F. (2015). What family dimensions are important for health-related quality of life in adolescence? Journal of Youth Studies, 18(1), 53-67. doi: 10.1080/13676261.2014.933191.</p>
+
+		<p>– JIMÉNEZ-IGLESIAS, A. Y MORENO, C. (2015). La influencia de las diferencias entre el padre y la madre sobre el ajuste adolescente. Anales de Psicología, 31(1), 367-377. doi: 10.6018/analesps.31.1.158081</p>
+
+		<p>– GARCÍA-MOYA, I., BROOKS, F., MORGAN, A. &amp; MORENO, C. (2015). Subjective well-being in adolescence and teacher connectedness. A health asset analysis. Health Education Journal, 74(6), 641-654. doi: 10.1177/0017896914555039</p>
+
+		<p>– GALLEGO, P., GALÁN, I., MEDRANO, M.J., RAMOS, P., RIVERA, F. &amp; MORENO, C. (2014). Recent changes in school-based policies on physical activity and nutrition in Spain. European Journal of Public Health, 1-6. doi:10.1093/eurpub/cku022.</p>
+
+		<p>– GALÁN, I., BOIX, R., MEDRANO, M. J., RAMOS, P., RIVERA, F. &amp; MORENO, C. (2014). Individual Factors and School-Based Policies Related to Adherence to Physical Activity Recommendations in Spanish Adolescents. Prevention Science, 15(4), 588-599. doi: 10.1007/s11121-013-0407-5.</p>
+
+		<p>– KJÆRULFF, T. M., RIVERA, F., JIMÉNEZ-IGLESIAS, A. Y MORENO, C. (2014). Perceived quality of social relations and frequent drunkenness: A cross-sectional study of Spanish adolescents. Alcohol and Alcoholism, 49(4), 466-471. doi:10.1093/alcalc/agu012</p>
+
+		<p>– JIMÉNEZ-IGLESIAS, A., MORENO, C., GARCÍA-MOYA, I. Y LÓPEZ, F. (2014). Las relaciones familiares en la voz de chicos y chicas adolescentes/ The family relationships in the adolescents’ voice/ As relações familiares na voz dos adolescentes. Journal of Child and Adolescent Psychology|| Revista de Psicologia da criança e do adolescente, 5(2), 11-30.</p>
+
+		<p>– GARCÍA-MOYA, I., SUOMINEN, S. &amp; MORENO, C. (2014). Bullying victimization prevalence and its effects on psychosomatic complaints. Can sense of coherence make a difference? Journal of School Health, 84(10), 646-653. doi: 10.1111/josh.12190</p>
+
+		<p>– GARCÍA-MOYA, I., MORENO, C. &amp; RIVERA, F. (2014). Obtaining a hierarchy of contextual factors in shaping the sense of coherence of male and female adolescents. Journal of Happiness Studies, 15(6), 1267-1287.  doi: 10.1007/s10902-013-9475-2</p>
+
+		<p>– RAMOS, P.,  BROOKS, F., GARCÍA-MOYA, I., RIVERA, F. &amp; MORENO, C. (2013). Eating habits and physical activity in dieter and non-dieter youth: A gender analysis of English and Spanish adolescents. The Social Science Journal, 50(4), 575-582. doi: 10.1016/j.soscij.2013.09.017.</p>
+
+		<p>– GALÁN, I., BOIX, R., MEDRANO, M. J., RAMOS, P., RIVERA, F., PASTOR-BARRIUSO, R. &amp; MORENO, C. (2013). Physical activity and self-reported health status among adolescents: a cross-sectional population-based study. BMJ Open, 3:e002644. doi: 10.1136/bmjopen-2013-002644. </p>
+
+		<p>– GARCÍA-MOYA, I., MORENO, C. &amp; BRAUN-LEWENSOHN, O. (2013). Neighbourhood perceptions and sense of coherence in adolescence. The Journal of Primary Prevention, 34(5), 371-379. doi: 10.1007/s10935-013-0320-5</p> 
+
+		<p>– GARCÍA-MOYA, I., MORENO, C. &amp; JIMÉNEZ-IGLESIAS, A. (2013). Understanding the joint effects of family and other developmental contexts on the sense of coherence(SOC): A person-focused analysis using the Classification Tree. Journal of Adolescence, 36(5), 913-923. doi: 10.1016/j.adolescence.2013.07.007</p>
+
+		<p>– GARCÍA-MOYA, I., MORENO, C. &amp; JIMÉNEZ-IGLESIAS, A. (2013). Building a composite factorial score for the assessment of quality of parent-child relationships in adolescence. European Journal of Developmental Psychology, 10(5), 642-648. doi:10.1080/17405629.2012.707781</p>
+
+		<p>– JIMÉNEZ-IGLESIAS, A., MORENO, C., GARCÍA-MOYA, I. &amp; RAMOS, P. (2013). How can parents obtain knowledge about their adolescent children? Infancia y Aprendizaje, 36(2), 181-197. doi: 10.1174/021037013806196256</p>
+
+		<p>– GARCÍA-MOYA,I., JIMÉNEZ-IGLESIAS, A. &amp; MORENO, C. (2013). Sense of coherence and substance use in Spanish adolescents. Does the effect of SOC depend on patterns of substance use in their peer group? Adicciones, 25(2), 109-117.</p>
+
+		<p>– GARCÍA-MOYA, I., RIVERA, F. &amp; MORENO, C. (2013). School context and health in adolescence. The role of sense of coherence. Scandinavian Journal of Psychology, 54, 243-249. doi: 10.1111/sjop.12041</p>
+
+		<p>– JIMÉNEZ-IGLESIAS, A., MORENO, C., RIVERA, F., &amp; GARCÍA-MOYA, I. (2013). The role of the family in promoting responsible substance use in adolescence. Journal of Child and Family Studies, 22(5), 585-602. doi: 10.1007/s10826-013-9737-y</p>
+
+		<p>– GARCÍA-MOYA, I., RIVERA, F., MORENO, C. &amp; LÓPEZ, A. (2013). Calidad de la relación entre los progenitores y sentido de coherencia en sus hijos adolescentes. El efecto de mediación de la satisfacción familiar. Anales de Psicología, 29(2), 482-490. doi: 10.6018/analesps.29.2.138861</p>
+
+		<p>– RIVERA, F., GARCÍA-MOYA, I., MORENO, C. &amp; RAMOS, P.  (2013). Developmental contexts and sense of coherence in adolescence: a systematic review. Journal of Health Psychology, 18(6), 800-812. doi:10.1177/1359105312455077</p>
+
+		<p>– LEAL, E., RAMOS, P., MORENO, C. Y RIVERA, F. (2012). Características de las relaciones de amistad durante la adolescencia: diferencias entre chicos y chicas en España. Journal of Child and Adolescent Psychology, 3(2), 315-328.</p>
+
+		<p>– GARCÍA-MOYA, I., RIVERA, F., MORENO, C., LINDSTRÖM, B. &amp; JIMÉNEZ-IGLESIAS, A. (2012). Analysis of the importance of family in the development of sense of coherence during adolescence. Scandinavian Journal of Public Health, 40(4), 333-339. doi: 10.1177/1403494812449924</p>
+
+		<p>– RAMOS, P., RIVERA, F. &amp; MORENO, C. (2012). Beneficios del contexto asociativo en las actividades de tiempo libre de los adolescentes españoles. Infancia y Aprendizaje, 35(3), 365-378. doi: 10.1174/021037012802238984</p>
+
+		<p>– TABAK, I., MAZUR, J., GRANADO, C., ORKENYI, A., ZABORSKIS, A., AASVEE, K. &amp; MORENO, C. (2012). Examining trends in parent-child communication in Europe over 12 years. The Journal of Early Adolescence, 32(1), 26-54. doi: 10.1177/0272431611419509</p>
+
+		<p>– JIMÉNEZ-IGLESIAS, A., MORENO, C., GRANADO-ALCÓN, M.C. &amp; LÓPEZ, A.M. (2012). Parental knowledge and adolescent adjustment (substance use and health-related quality of life). The Spanish Journal of Psychology, 15(1), 132-144. doi: 10.5209/rev_SJOP.2012.v15.n1.37297</p>
+
+		<p>– RAMOS, P., MORENO, C., RIVERA, F., GASPAR, M. &amp; MORGAN, A. (2012). Analysis of social inequalities in health through an integrated measure of perceived and experienced health in Spanish and Portuguese adolescents. Journal of Health Psychology, 17(1), 57-67.</p>
+
+		<p>– GARCÍA-MOYA, I., MORENO, C., RIVERA, F., RAMOS, P. &amp; JIMÉNEZ-IGLESIAS, A. (2012). Iguales, familia y participación en actividades deportivas organizadas durante la adolescencia. Revista de Psicología del Deporte, 21(1), 153-158.</p>
+
+		<p>– RAMOS, P., RIVERA, F., MORENO, C. &amp; JIMÉNEZ-IGLESIAS, A. (2012). Análisis de clúster de la actividad física y las conductas sedentarias de los adolescentes españoles, correlación con la salud biopsicosocial. Revista de Psicología del Deporte, 21(1), 99-106.</p>
+
+		<p>– MOLCHO, M., CRISTINI, F., NIC GABHAINN, S., SANTINELLO, M., MORENO, C., GASPAR DE MATOS, M., BJARNSON, T., ALDASSARI, D., &amp; DUE, P. (2011). Health and well-being among child immigrants in Europe. Eurohealth, 16(1), 1-4.</p>
+
+		<p>– RIVERA, F., LÓPEZ, A., RAMOS, P. &amp; MORENO, C. (2011). Propiedades psicométricas de la escala Sentido de Coherencia (SOC-29) en adolescentes españoles. Journal of Child and Adolescent Psychology, 4, 11-40.</p>
+
+		<p>– RAMOS, P., MORENO, C., RIVERA, F. &amp; LÓPEZ, A. (2011). The classification of Spanish adolescents based on substance consumption patterns and the analysis of the relationships within their social developmental contexts. The Spanish Journal of Psychology, 14, 734-745.</p>
+
+		<p>– RIVERA, F., RAMOS, P., MORENO, C. &amp; HERNAN, M. (2011). Análisis del modelo salutogénico en España: aplicación en salud pública e implicaciones para el modelo de activos en salud. Revista Española de Salud Pública, 85(2), 137-147.</p>
+
+		<p>– RAMOS, P., RIVERA, F. &amp; MORENO, C. (2010). Diferencias de sexo en imagen corporal, control de peso e Índice de Masa Corporal de los adolescentes españoles. Psicothema, 22(1), 77-83.</p>
+
+		<p>– RAMOS, P., MORENO, C., RIVERA, F. &amp; PÉREZ, P. (2010). Integrated analysis of the health and social inequalities of Spanish adolescents. International Journal of Clinical and Health Psychology, 10(3), 477-498.</p>
+
+		<p>– RAMOS, P. &amp; MORENO, C. (2010). Situación actual del consumo de sustancias en los adolescentes españoles: tabaco, alcohol, cannabis y otras drogas ilegales. Health and Addictions, 10, 13-36.</p>
+
+		<p>– JIMÉNEZ-IGLESIAS, A., RAMOS, P., RIVERA, F. &amp; MORENO, C. (2010). El consumo de tabaco y alcohol en los adolescentes españoles y los programas educativos escolares de prevención de drogodependencias. Journal of Child and Adolescent Psychology, 1, 15-30.</p>
+
+		<p>– JIMÉNEZ-IGLESIAS, A., MORENO, C., OLIVA, A. &amp; RAMOS, P. (2010). Una aproximación a la evaluación de la eficacia de un programa de prevención de drogodependencias en Educación Secundaria en Andalucía. Adicciones, 22, 253-265.</p>
+
+		<p>– MORENO, C, RAMOS, P., &amp; RIVERA, F. (2010). La preocupación por la imagen corporal en las chicas adolescentes españolas. Infocop online.</p>
+
+		<p>– MORENO, C., SÁNCHEZ-QUEIJA, I., MUÑOZ-TINOCO, I., GASPAR DE MATOS, M., DALLAGO, L., TER BOGT, T., CAMACHO, I. &amp; RIVERA, F. (2009). Cross-national associations between parent and peer communication and psychological complaints. International Journal of Public Health, 54, 235- 242.</p>
+
+		<p>– MORENO, C., RAMOS, P., RIVERA, F.J. &amp; JIMÉNEZ-IGLESIAS, A. (2009). Estudio "Health Behavior in School-aged Children" (HBSC). Actividad física de los adolescentes españoles. El tren de la salud, 2, 8-9.</p>
+
+		<p>– KUNTSCHE, E., SIMONS-MORTON, B., TER BOGT, T., SÁNCHEZ-QUEIJA, I., MUÑOZ-TINOCO, V., GASPAR DE MATOS, M., SANTINELLO, M., LENZI, M. (2009). Electronic media communication with friends from 2002 to 2006 and links to face-to-face contacts in adolescence: an HBSC study in 31 European and North American Countries and Regions. International Journal of Public Health, 54, 243-250.</p>
+
+		<p>– RAMOS, P., RIVERA, F.J., JIMÉNEZ-IGLESIAS, A. &amp; MORENO, C. (2008). La actividad física en los adolescentes españoles: estudio de las desigualdades socioeconómicas, de edad y de género. Ciencia y Deporte, 5.</p>
+
+		<p>– RAMOS, P., RIVERA, F.J., JIMÉNEZ-IGLESIAS, A. &amp; MORENO, C. (2008). La actividad física en la adolescencia. Ciencia y Deporte, 5.</p>
+
+		<p>– SÁNCHEZ-QUEIJA, I., MORENO, C., MUÑOZ, V. &amp; PÉREZ, P. (2007). Adolescencia, grupo de iguales y consumo de sustancias. Un estudio descriptivo y relacional. Apuntes de Psicología, 25(3), 305-324.</p>
+
+		<p>– MORENO, C.; MUÑOZ, M.V.; PÉREZ, P. &amp; SÁNCHEZ, I. (2006). Los adolescentes españoles y sus familias: calidad en la comunicación con el padre y con la madre y conductas de riesgo relacionadas con el consumo de sustancias adictivas. Cultura y Educación, 18(3-4), 345-362.</p>
+
+		<p>– MORENO, M. C., MUÑOZ-TINOCO, V., PÉREZ-MORENO, P. J. &amp; SÁNCHEZ-QUEIJA, I. (2004). Incidencia del maltrato entre iguales durante la adolescencia en España (Bullying Incidence In Spain During Adolescence). Portularia. Revista de Trabajo Social, 4, 307-316.</p>
+
+		<p>– MENDOZA R. &amp; BATISTA-FOGUET J.M. (1998). El consumo de tabaco, alcohol y otras drogas en los adolescentes escolarizados españoles. Gaceta Sanitaria, 12, 263-27.</p>
+
+		<p>– MENDOZA BERJANO, R. (1987). Consumo de alcohol y tabaco en los escolares españoles. Comunidad y Drogas, 5-6, 83-102.</p></div>
+	<div *ngIf="showBookChapters">
+		<h2>Capítulos de libros</h2>
+		<p>– RIVERA, F., RAMOS, P., MORENO, C., HERNÁN, M. &amp; GARCÍA-MOYA, I. (2013). Análisis del Modelo Salutogénico y del Sentido de Coherencia: retos y expansión de un enfoque positivo de la salud y el desarrollo. En M. Hernán, A. Morgan y A. Mena (Eds.),  Formación en salutogénesis y activos para la salud. Serie Monografías EASP Nº51. Granada (España): Escuela Andaluza de Salud Pública. ISBN: 978-84-695-7462-1. Disponible en: http://www.easp.es/es/system/files/easp_formacion_en_salutogenesis_activos__1.pdf</p>
+
+		<p>– RAMOS, P., MORENO, C. &amp; RIVERA, F. (2012). Recomendaciones para la intervención en la población adolescente a partir de los datos del estudio HBSC en España: importancia de la prevención del sobrepeso y la obesidad. En Gaspar de Matos, M. y Tomé, G. (Eds.), Promoção de Competências e do Capital Social para um Empreendedorismo com Saúde na Escola e na Comunidade. Vol. 2. Intervençoes. Lisboa (Portugal): Placebo Editora. ISBN: 978-989-8463-35-7.</p>
+
+		<p>– OTTOVA, V., RAMOS, P., MAZUR, J., GOBINA, I., JERICEK, H., GASPAR, T., VALIMAA, R., VAN DORSSELAER, S., RAVENS-SIEBERER, U. &amp; THE HBSC POSITIVE HEALTH FOCUS GROUP (2012). Health outcomes. En Currie, C. et al. (Ed.), Social determinants of health and well-being among young people. Health Behaviour in School-Aged Children (HBSC) study: International report from the 2009/2010 survey. Copenhagen, WHO Regional Office for Europe (Health Policy for Children and Adolescents, No. 6). ISBN: 978-92-890-1423-6.</p>
+
+		<p>– RAMOS, P., RIVERA, F. &amp; MORENO, C. (2012). Key variables in the development of eating disorders during the adolescence: implications for sex differences. En I. Jauregui (Ed.): Relevant Topics in Eating Disorders. Rijeka, Croacia: InTech. ISBN 978-953-307-727-7.</p>
+
+		<p>– JIMÉNEZ-IGLESIAS, A., RIVERA, F., MORENO, C., &amp; RAMOS, P. (2010). What source of parental knowledge is more important? En The 12th Biennial Conferences of the European Association for Research on Adolescence. Bologna, Italy: Monduzzi Editore International.</p>
+
+		<p>– MORENO, C., JIMÉNEZ-IGLESIAS, A., RIVERA, F. &amp; RAMOS, P. (2009). National case studies. Case study 5: Spain. En M. Molcho, T. Bjarnason, F. Cristini, M. Gaspar de Matos, T. Koller, C. Moreno, S. NicGabhainn &amp; M. Santinello (Eds.), Foreign-born children in Europe: An overview from the Health Behaviour in School-aged Children (HBSC) Study (pp. 34-38). Brussels, Belgium: International Organization for Migration (IOM).</p>
+
+		<p>– GRANADO, M.C., MORENO, C., JIMÉNEZ-IGLESIAS, A., LÓPEZ, A., RIVERA, F. &amp; RAMOS, P. (2009). Los hogares monomadrentales y monopadrentales desde una perspectiva transcultural: percepción de bienestar en niños y adolescentes. En A. Martinez Pampliega (Ed.), Divorcio y monoparentalidad: retos de nuestra sociedad ante el divorcio (pp. 91-109). Bilbao: Red Europea de Institutos de la Familia (REDIF).</p>
+
+		<p>– MORENO, C., RIVERA, F., RAMOS, P., MUÑOZ-TINOCO, V., SÁNCHEZ-QUEIJA, I. Y GRANADO-ALCÓN, M.C. (2008). "Social contexts and psychological adjustment in Spanish adolescents (HBSC 2002 and 2006)". En WHO/HBSC Forum 2007: Social Cohesion for Mental Wellbeing among Adolescents. Case study review meeting. Copenhagen, WHO Regional Office for Europe, 2008.
+		</p></div>
+	<div *ngIf="showOthers">
+		<h2>Otras publicaciones</h2>
+		<p>– MORENO, C., RAMOS, P., JIMÉNEZ-IGLESIAS, A., RIVERA, F., MORGAN, A. &amp; BROOKS, F. (Eds.) (2011). Análisis de los determinantes de la salud a partir de los activos en la adolescencia: material didáctico (DVD). Sevilla, España: Secretariado de Recursos Audiovisuales y Nuevas Tecnologías de la Universidad de Sevilla. ISBN: 978-84-693-6435-2.</p>
+
+		<p>– MORENO, C., JIMÉNEZ-IGLESIAS, A., RAMOS, P., RIVERA, F., MORGAN, A. &amp; BROOKS, F. (Eds.) (2010). The assets in the adolescents' voices (DVD). Sevilla, España: Secretariado de Recursos Audiovisuales y Nuevas Tecnologías de la Universidad de Sevilla. ISBN: 978-84-693-1219-3.</p>
+
+		<p>– MORENO, C., RAMOS, P., RIVERA, F., JIMÉNEZ-IGLESIAS, A., MUÑOZ-TINOCO, V., SÁNCHEZ-QUEIJA, I., GRANADO, M.C. &amp; LÓPEZ, A. (2008). International Symposium "25 years of the HBSC Study: contributions and future Challenges".Sevilla: Universidad de Sevilla. ISBN: 978-84-691-5846-3.</p></div>
+</div>

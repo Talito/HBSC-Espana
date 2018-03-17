@@ -1,0 +1,15 @@
+<div class="post-list container">
+	<h1>Noticias</h1>
+	<p>En esta sección puedes encontrar nuestras notas de prensa para estar al día, así como las menciones de HBSC en los medios.</p>
+	<div class="posts posts-list">
+		<div *ngFor="let post of posts | categoryPipe: 5" class="post-card">
+			<div class="post-card text">
+				<h3>{{ post.title }}</h3>
+				<p [innerHTML]="post.excerpt"><p>
+			</div>
+		</div>
+		<div *ngIf="!posts?.length" id="loading-message">
+			<p>Cargando últimas publicaciones...</p>
+		</div>
+	</div>
+</div>
